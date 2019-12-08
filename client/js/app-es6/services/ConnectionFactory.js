@@ -1,5 +1,5 @@
 
-var ConnectionFactory = (function (){
+
     const stores = ['negociacoes'];
     const version = 4;
     const dbName = 'negociacoesDB';
@@ -7,7 +7,7 @@ var ConnectionFactory = (function (){
     var connection = null;
     var close =null;
 
-    return class ConnectionFactory{
+    export class ConnectionFactory{
         constructor(){
             throw new Error('Não é possível instanciar esta classe');
         }
@@ -51,5 +51,5 @@ var ConnectionFactory = (function (){
             }
         }
     }
-})();
+
 
